@@ -18,7 +18,7 @@
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/katanama"
+        android:hint="@string/katanama"
         android:textSize="@dimen/tulisanSemua" />
 
     <EditText
@@ -31,7 +31,7 @@
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="@string/kataemail"
+        android:hint="@string/kataemail"
         android:textSize="@dimen/tulisanSemua" />
 
     <EditText
@@ -44,7 +44,7 @@
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="@string/kataPassword"
+        android:hint="@string/kataPassword"
         android:textSize="@dimen/tulisanSemua" />
 
     <EditText
@@ -58,7 +58,7 @@
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="@string/kataPassword"
+        android:hint="@string/kataRePassword"
         android:textSize="@dimen/tulisanSemua" />
 
     <Button

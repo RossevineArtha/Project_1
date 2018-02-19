@@ -42,6 +42,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="kataJudulAlokasi">Nama Alokasi</string>
     <string name="kataTipe">Tipe</string>
     <string name="KataKategori">Kategori</string>
     <string name="kataJumlah">Jumlah</string>
