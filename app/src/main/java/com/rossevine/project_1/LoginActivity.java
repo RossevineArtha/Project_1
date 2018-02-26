@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.rossevine.project_1.Task.LoginTask;
-import com.rossevine.project_1.entity.UserWrapper;
+import com.rossevine.project_1.Wrapper.UserWrapper;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -38,16 +38,29 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Please fill username and password", Toast.LENGTH_SHORT).show();
         }
   }
+    @OnClick(R.id.btnRegistrasi_LoginActivity)
+    public void btnRegistrasi_LoginActivity(){
+        Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
 
+        this.startActivity(intent);
+        this.finish();
+
+    }
     public void openDataActivity(UserWrapper userWrapper) {
-        if (userWrapper !=  null  && userWrapper.getStatus() == 1 &&  userWrapper.getUser()!= null ) {
+        if (userWrapper !=  null  && userWrapper.getStatus()==1 &&  userWrapper.getUser()!= null ) {
+
             Toast.makeText(this, userWrapper.getMessage(), Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(LoginActivity.this,ProfileActivity.class);
+            intent.putExtra("email",userWrapper.getUser().getEmail());
+            intent.putExtra("name",userWrapper.getUser().getName());
             this.startActivity(intent);
             this.finish();
         } else {
-            Toast.makeText(this, this.getResources().getString(R.string.email),
-                    Toast.LENGTH_SHORT).show();
+
+            Toast.makeText(this, userWrapper.getMessage(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+            this.startActivity(intent);
+            this.finish();
         }
     }
 }

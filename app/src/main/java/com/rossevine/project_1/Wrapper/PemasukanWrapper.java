@@ -1,13 +1,15 @@
-package com.rossevine.project_1.entity;
+package com.rossevine.project_1.Wrapper;
+
+import com.rossevine.project_1.entity.Pemasukan;
 
 /**
- * Created by LENOVO on 2/22/2018.
+ * Created by LENOVO on 2/25/2018.
  */
 
-public class UserWrapper {
+public class PemasukanWrapper {
     private  int status;
     private  String message;
-    private  User user;
+    private Pemasukan pemasukan;
 
     public int getStatus() {
         return status;
@@ -25,11 +27,11 @@ public class UserWrapper {
         this.message = message;
     }
 
-    public User getUser() {
-        return user;
+    public Pemasukan getPemasukan() {
+        return pemasukan;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setPemasukan(Pemasukan pemasukan) {
+        this.pemasukan = pemasukan;
     }
 }

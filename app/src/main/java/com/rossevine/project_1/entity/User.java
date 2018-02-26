@@ -5,17 +5,17 @@ package com.rossevine.project_1.entity;
  */
 
 public class User {
-    private int id;
+    private int idUser;
     private String name;
     private String email;
     private String password;
 
-    public int getId() {
-        return id;
+    public int getIdUser() {
+        return idUser;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdUser(int idUser) {
+        this.idUser = idUser;
     }
 
     public String getName() {

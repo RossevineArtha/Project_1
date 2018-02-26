@@ -30,6 +30,7 @@
     <string name="kataRePassword">Re-Password</string>
     <string name="registrasi">Registrasi</string>
     <string name="masukPenge">Add Pemasukan/Pengeluwaran</string>
+    <string name="laporanPenge">Laporan Pemasukan/Pengeluwaran</string>
     <string name="ubahPassword">Ganti Password</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

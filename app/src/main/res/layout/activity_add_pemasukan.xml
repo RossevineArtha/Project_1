@@ -30,7 +30,7 @@
                 android:textSize="@dimen/tulisanTotal" />
 
             <EditText
-                android:id="@+id/editTextDate"
+                android:id="@+id/editTextDate_Pemasukan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/activity_spasi_margin"
@@ -58,7 +58,7 @@
                     android:textSize="@dimen/tulisanSemua" />
 
                 <Spinner
-                    android:id="@+id/spinner4"
+                    android:id="@+id/spinnerCategory_AddPemasukan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_spasi_margin"

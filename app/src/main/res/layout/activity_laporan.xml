@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_spasi_margin"
+    android:layout_marginEnd="@dimen/activity_spasi_margin"
+    android:layout_marginStart="@dimen/activity_spasi_margin"
+    android:layout_marginTop="@dimen/activity_spasi_margin"
+    android:orientation="vertical"
+    tools:context="com.rossevine.project_1.LaporanActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kataPemasukan"
+        android:textAlignment="center"
+        android:textSize="@dimen/tulisanTotal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtDateAwal_LaporanPemasukan"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" -"
+            android:textSize="@dimen/tulisanTotal" />
+
+        <EditText
+            android:id="@+id/txtDateAkhir_LaporanPemasukan"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView_LaporanPemasukan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
